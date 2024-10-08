@@ -1,0 +1,109 @@
+#contactPage{
+    max-width: 65rem;
+    width: 100vw;
+    height: calc(100vh-4rem);
+    margin: 4rem auto;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+}
+.contactPageTitle{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+}
+.contactDesc{
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 60rem;
+    width: 90vw;
+}
+.name,.email{
+    width: 100%;
+    max-width: 40rem;
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 200;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+input:focus {
+    border: 2px solid purple;
+}
+.msg{
+    width: 100%;
+    max-width: 40rem;
+    font-size: 1.5rem;
+    font-weight: 200;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    /* height: 10rem; */
+}
+.submitBtn{
+    background: lightskyblue;
+    /* border: none; */
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+    padding: 0.4rem 3.5rem;
+    font-size: 1.5rem;
+}
+#msg{
+    color: green;
+    /* background: whitesmoke; */
+    border-radius: 5rem;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+@media screen and (max-width:720px) {
+    .contactPageTitle{
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    .contactForm{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 60rem;
+        width: 90vw;
+    }
+}
+@media screen and (max-width:484px) {
+    .contactPageTitle{
+        font-size: 2vw;
+        margin-top: 1rem;
+    }
+    .contactDesc{
+        font-size: 2vw;
+        font-weight: 200;
+    }
+    .name,.email{
+        margin: 0.5rem;
+        font-size: 1rem;
+        font-weight: 200;
+        padding: 0.5rem 1rem;
+    }
+    .msg{
+        font-size: 1rem;
+        font-weight: 100;
+        padding: 0.5rem 1rem;
+
+    }
+}
